@@ -1,0 +1,24 @@
+.app {
+  background: var(--WrapperColor);
+  font-family: "Montserrat";
+  color: var(--greySoftColor);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+
+
+.icon {
+  fill: var(--greySoftColor);
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 20px 30px;
+}
+
+
+

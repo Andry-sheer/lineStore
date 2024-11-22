@@ -1,0 +1,40 @@
+
+.footer {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bgColor);
+  border-radius: 24px;
+}
+
+.logo {}
+
+.rights {
+  color: var(--greySoftColor);
+}
+
+.rights > a {
+  color: var(--purpleColor);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.socialSvg {
+  width: 25px;
+  height: 25px;
+  fill: var(--greySoftColor);
+  transition: all .5s;
+}
+
+.socialLink:hover > .socialSvg {
+  fill: #6C3EB8;
+}

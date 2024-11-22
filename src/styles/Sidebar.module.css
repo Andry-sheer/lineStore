@@ -1,0 +1,46 @@
+.sidebar {
+  display: flex;
+  flex-flow: column;
+  gap: 12px;
+  max-width: 304px;
+  padding: 25px;
+  background: var(--bgColor);
+  border-radius: 6px;
+}
+
+.title {
+  font-weight: 700;
+  color: var(--textColor);
+}
+
+.menu {
+  display: flex;
+  flex-flow: column;
+  gap: 12px;
+}
+
+.menuLink a {
+  text-decoration: none;
+  transition: all .4s;
+  color: var(--greySoftColor);
+}
+
+.menuLink:hover a {
+  color: var(--textColor);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  text-decoration: none;
+  transition: all .4s;
+  color: var(--greySoftColor);
+}
+
+.link:hover {
+  color: var(--textColor);
+}
+
