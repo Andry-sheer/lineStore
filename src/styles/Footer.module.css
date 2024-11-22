@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: space-between;
   background: var(--bgColor);
-  border-radius: 24px;
+  border-radius: 6px;
 }
 
 .logo {}

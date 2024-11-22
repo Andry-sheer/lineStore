@@ -3,20 +3,21 @@ import styles from "../../styles/Sidebar.module.css";
 import { useSelector } from "react-redux";
 
 const Sidebar = () => {
-
-  const { list } = useSelector(({ categories })=> categories);
+  const { list } = useSelector(({ categories }) => categories);
 
   return (
     <section className={styles.sidebar}>
       <div className={styles.title}>CATEGORIES</div>
       <nav>
         <ul className={styles.menu}>
-          {list.map(({ id, name })=> (
-            <li className={styles.menuLink} key={id}>
-              <NavLink to={`/categories/${id}`}>{name}</NavLink>
+          {list.map(({ id, name }) => (
+            <li key={id}>
+              <NavLink 
+                className={({isActive})=> 
+                  `${styles.menuLink} ${isActive ? styles.activeMenuLink : ""}`}
+                to={`/categories/${id}`}>{name}</NavLink>
             </li>
           ))}
-
         </ul>
       </nav>
 
