@@ -1,7 +1,7 @@
 
 import styles from '../../styles/Home.module.css';
 
-import PC from '../../assets/images/imgPC.png'
+import PC from '../../assets/images/nvidia.png'
 
 const Poster = () => (
   <section className={styles.home}>

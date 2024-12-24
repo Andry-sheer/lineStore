@@ -1,4 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+
 import axios from "axios";
 import { BASE_URL } from "../../utils/constants";
 
@@ -33,21 +34,8 @@ const categoriesSlice = createSlice({
 
     builder.addCase(getCategories.rejected, (state) => {
       state.isLoading = false;
-      
     });
   },
 });
 
 export default categoriesSlice.reducer;
-
-// import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
-// import { userAPI } from './userAPI'
-
-// // First, create the thunk
-// const fetchUserById = createAsyncThunk(
-//   'users/fetchByIdStatus',
-//   async (userId: number, thunkAPI) => {
-//     const response = await userAPI.fetchById(userId)
-//     return response.data
-//   },
-// )

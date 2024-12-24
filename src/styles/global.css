@@ -2,6 +2,12 @@ html {
   background: var(--WrapperColor);
 }
 
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--basicWhite);
+}
+
 .app {
   background: var(--WrapperColor);
   font-family: "Montserrat";
@@ -21,6 +27,7 @@ html {
   margin: 0 auto;
   max-width: 1280px;
   padding: 0 0 20px;
+  flex-wrap: wrap;
 }
 
 

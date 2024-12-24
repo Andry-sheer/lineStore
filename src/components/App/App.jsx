@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux';
 
 import { getCategories } from '../../features/categories/categoriesSlice';
+import { getProducts } from '../../features/products/productsSlice';
 
 import AppRoutes from '../Routes/Routes';
 import Header from '../Header/Header';
@@ -13,6 +14,7 @@ const App = () => {
 
   useEffect(()=> {
     dispatch(getCategories());
+    dispatch(getProducts());
   }, [dispatch])
 
   return (

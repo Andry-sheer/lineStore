@@ -7,6 +7,7 @@
   max-height: 423px;
   position: relative;
   z-index: 0;
+  flex: 1 1 50%;
 }
 
 .title {
@@ -14,9 +15,6 @@
   font-size: 115px;
   color: var(--WrapperColor);
   line-height: 1.5;
-}
-
-.product {
 }
 
 .text {
@@ -57,7 +55,68 @@
 .image {
   position: absolute;
   z-index: 5;
-  bottom: -25px;
-  right: 70px;
+  bottom: -20px;
+  right: 40px;
 }
 
+.image img {
+  width: 400px;
+  height: 400px;
+}
+
+.banner {
+  display: flex;
+  background: var(--bgColor);
+  border-radius: 6px;
+  width: 100%;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.leftSide {
+  flex: 1 1 50%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  color: var(--purpleColor);
+}
+
+.content {
+  font-size: 70px;
+}
+
+.discountSpan {
+  font-size: 150px;
+}
+
+.more {
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: var(--purpleColor);
+  color: var(--basicWhite);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.rightSide {
+  position: relative;
+  flex: 1 1 50%;
+  background: no-repeat center/cover;
+}
+
+.discount {
+  position: absolute;
+  font-weight: 500;
+  font-size: 20px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.discountSpanTwo {
+  font-weight: 700;
+  color: var(--purpleColor);
+}
